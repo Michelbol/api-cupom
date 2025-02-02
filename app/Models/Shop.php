@@ -29,6 +29,7 @@ class Shop extends Model
     public function shopDetail(): array
     {
         return [
+            'name' => $this->name,
             'phoneNumber' => $this->phone_number,
             'isFavorite' => false,
             'cuponsAvailables' => $this->cupons,
